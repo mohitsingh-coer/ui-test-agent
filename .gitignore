@@ -1,0 +1,43 @@
+# Gradle outputs and caches
+.gradle/
+build/
+buildSrc/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Log Files
+*.log
+
+# Compiled Java class files
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# IntelliJ IDEA workspace
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse workspace
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+
+# VSCode workspace
+.vscode/

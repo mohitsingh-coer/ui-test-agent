@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.agent.test'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // LLM API communication
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.18.1'
+
+    // Cucumber & JUnit 4 (Cucumber 7 works well with JUnit 4)
+    testImplementation 'io.cucumber:cucumber-java:7.15.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.15.0'
+    testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+    useJUnit()
+}
